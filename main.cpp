@@ -5,6 +5,7 @@ int main()
 {
     char choice;
     char subChoice;
+    char rating;
 
     cout << "============================================" << endl;
     cout << "   TikTok Video Recommendation Assistant" << endl;
@@ -229,6 +230,23 @@ int main()
             default:
                 cout << "\nInvalid choice. Please choose a number from 1 to 6." << endl;
         }
+
+           // Rating
+    if (choice != '6')
+{
+    cout << "\nHow would you rate this recommendation?" << endl;
+    cout << "1. Poor" << endl;
+    cout << "2. Fair" << endl;
+    cout << "3. Good" << endl;
+    cout << "4. Very Good" << endl;
+    cout << "5. Excellent" << endl;
+
+    cout << "\nEnter your rating: ";
+    cin >> rating;
+
+    cout << "Thank you for your feedback!" << endl;
+}
+
 
     } while (choice != '6');
 
