@@ -24,23 +24,38 @@ int main()
         switch (choice)
         {
             case '1':
-                cout << "\nRecommended for you: Trending Music Videos!" << endl;
+                cout << "\nRecommended Music Videos:" << endl;
+                cout << "1. Trending Pop Songs" << endl;
+                cout << "2. New Music Releases" << endl;
+                cout << "3. Dance Challenge Music" << endl;
                 break;
 
             case '2':
-                cout << "\nRecommended for you: Funny Comedy Videos!" << endl;
+                cout << "\nRecommended Comedy Videos:" << endl;
+                cout << "1. Funny Short Clips" << endl;
+                cout << "2. Comedy Sketches" << endl;
+                cout << "3. Funny TikTok Challenges" << endl;
                 break;
 
             case '3':
-                cout << "\nRecommended for you: Gaming Tips & Tricks!" << endl;
+                cout << "\nRecommended Gaming Videos:" << endl;
+                cout << "1. Gaming Tips and Tricks" << endl;
+                cout << "2. New Game Reviews" << endl;
+                cout << "3. Best Gaming Moments" << endl;
                 break;
 
             case '4':
-                cout << "\nRecommended for you: Educational & Learning Videos!" << endl;
+                cout << "\nRecommended Educational Videos:" << endl;
+                cout << "1. Programming Tutorials" << endl;
+                cout << "2. Science Facts" << endl;
+                cout << "3. Study Tips and Techniques" << endl;
                 break;
 
             case '5':
-                cout << "\nRecommended for you: Easy Cooking & Food Videos!" << endl;
+                cout << "\nRecommended Food Videos:" << endl;
+                cout << "1. Easy Cooking Recipes" << endl;
+                cout << "2. Street Food Videos" << endl;
+                cout << "3. Dessert Recipes" << endl;
                 break;
 
             default:
@@ -57,3 +72,4 @@ int main()
 
     return 0;
 }
+
