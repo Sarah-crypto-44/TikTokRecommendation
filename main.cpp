@@ -25,8 +25,19 @@ void showMusicRecommendations()
     cout << "2. New Music Releases" << endl;
     cout << "3. Dance Music" << endl;
 
-    cout << "\nEnter your choice: ";
-    cin >> subChoice;
+    do
+    {
+        cout << "\nEnter your choice: ";
+        cin >> subChoice;
+
+        // Validate the subcategory choice
+        if (subChoice < '1' || subChoice > '3')
+        {
+            cout << "\nInvalid choice. Please choose a number from 1 to 3." << endl;
+        }
+
+    } while (subChoice < '1' || subChoice > '3');
+
 
     // Display recommendations based on the selected Music preference
     switch (subChoice)
@@ -68,8 +79,18 @@ void showComedyRecommendations()
     cout << "2. Comedy Sketches" << endl;
     cout << "3. Funny Challenges" << endl;
 
-    cout << "\nEnter your choice: ";
-    cin >> subChoice;
+    do
+    {
+        cout << "\nEnter your choice: ";
+        cin >> subChoice;
+
+        // Validate the subcategory choice
+        if (subChoice < '1' || subChoice > '3')
+        {
+            cout << "\nInvalid choice. Please choose a number from 1 to 3." << endl;
+        }
+
+    } while (subChoice < '1' || subChoice > '3');
 
     // Display recommendations based on the selected Comedy preference
     switch (subChoice)
@@ -111,8 +132,18 @@ void showGamingRecommendations()
     cout << "2. Game Reviews" << endl;
     cout << "3. Gaming Moments" << endl;
 
-    cout << "\nEnter your choice: ";
-    cin >> subChoice;
+    do
+    {
+        cout << "\nEnter your choice: ";
+        cin >> subChoice;
+
+        // Validate the subcategory choice
+        if (subChoice < '1' || subChoice > '3')
+        {
+            cout << "\nInvalid choice. Please choose a number from 1 to 3." << endl;
+        }
+
+    } while (subChoice < '1' || subChoice > '3');
 
     // Display recommendations based on the selected Gaming preference
     switch (subChoice)
@@ -154,8 +185,18 @@ void showEducationRecommendations()
     cout << "2. Science" << endl;
     cout << "3. Study Tips" << endl;
 
-    cout << "\nEnter your choice: ";
-    cin >> subChoice;
+    do
+    {
+        cout << "\nEnter your choice: ";
+        cin >> subChoice;
+
+        // Validate the subcategory choice
+        if (subChoice < '1' || subChoice > '3')
+        {
+            cout << "\nInvalid choice. Please choose a number from 1 to 3." << endl;
+        }
+
+    } while (subChoice < '1' || subChoice > '3');
 
     // Display recommendations based on the selected Education preference
     switch (subChoice)
@@ -197,8 +238,18 @@ void showFoodRecommendations()
     cout << "2. Street Food" << endl;
     cout << "3. Desserts" << endl;
 
-    cout << "\nEnter your choice: ";
-    cin >> subChoice;
+    do
+    {
+        cout << "\nEnter your choice: ";
+        cin >> subChoice;
+
+        // Validate the subcategory choice
+        if (subChoice < '1' || subChoice > '3')
+        {
+            cout << "\nInvalid choice. Please choose a number from 1 to 3." << endl;
+        }
+
+    } while (subChoice < '1' || subChoice > '3');
 
     // Display recommendations based on the selected Food preference
     switch (subChoice)
@@ -235,15 +286,26 @@ void getRating()
 {
     char rating;
 
-    cout << "\nHow would you rate this recommendation?" << endl;
-    cout << "1. Poor" << endl;
-    cout << "2. Fair" << endl;
-    cout << "3. Good" << endl;
-    cout << "4. Very Good" << endl;
-    cout << "5. Excellent" << endl;
+    // Keep asking until the user enters a valid rating
+    do
+    {
+        cout << "\nHow would you rate this recommendation?" << endl;
+        cout << "1. Poor" << endl;
+        cout << "2. Fair" << endl;
+        cout << "3. Good" << endl;
+        cout << "4. Very Good" << endl;
+        cout << "5. Excellent" << endl;
 
-    cout << "\nEnter your rating: ";
-    cin >> rating;
+        cout << "\nEnter your rating: ";
+        cin >> rating;
+
+        // Validate the rating
+        if (rating < '1' || rating > '5')
+        {
+            cout << "Invalid rating. Please choose a number from 1 to 5." << endl;
+        }
+
+    } while (rating < '1' || rating > '5');
 
     cout << "Thank you for your feedback!" << endl;
 }
