@@ -3,17 +3,20 @@ using namespace std;
 
 int main()
 {
+ // Store the user's main category, subcategory, and rating choices
     char choice;
     char subChoice;
     char rating;
 
+// Display the program title
     cout << "============================================" << endl;
     cout << "   TikTok Video Recommendation Assistant" << endl;
     cout << "============================================" << endl;
 
+// Repeat the program until the user chooses Exit
     do
     {
-        // Display the main content categories
+// Display the main content categories
         cout << "\nChoose your favorite content:" << endl;
         cout << "1. Music" << endl;
         cout << "2. Comedy" << endl;
@@ -25,6 +28,7 @@ int main()
         cout << "\nEnter your choice: ";
         cin >> choice;
 
+// Select the category and display related subcategories
         switch (choice)
         {
             // MUSIC
@@ -36,7 +40,7 @@ int main()
 
                 cout << "\nEnter your choice: ";
                 cin >> subChoice;
-
+// Display recommendations based on the selected Music preference
                 switch (subChoice)
                 {
                     case '1':
@@ -224,9 +228,10 @@ int main()
 
             // EXIT
             case '6':
+        // Exit the recommendation system
                 cout << "\nThank you for using the TikTok Recommendation Assistant!" << endl;
                 break;
-
+        // Handle an invalid main category
             default:
                 cout << "\nInvalid choice. Please choose a number from 1 to 6." << endl;
         }
@@ -247,7 +252,7 @@ int main()
     cout << "Thank you for your feedback!" << endl;
 }
 
-
+// Continue showing recommendations until Exit is selected
     } while (choice != '6');
 
     return 0;
